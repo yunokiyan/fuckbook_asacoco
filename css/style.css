@@ -477,10 +477,10 @@ input[type="text"] {
 	margin-left: 46px;
 	display: inline-block;
 	margin-bottom: 10px;
+	line-height: 1.2rem;
 }
 .panel .panel_bottom .comment>dl dt strong{
 	display: block;
-	margin-bottom: 5px;
 }
 .panel .panel_bottom .comment>dl dd{
 	font-size: 0.8rem;
@@ -583,7 +583,34 @@ input[type="text"] {
 	background-size: 36px;
 }
 
+/* user */
+#sidebar1 dl>dd li.icon_user01,
+#sidebard2 dl>dd li.icon_user01,
+.panel .panel_bottom .comment>dl.icon_user01{
+	background:url(../images/uicon_01.png) no-repeat left top;
+	background-size: 36px;
+}
 
+#sidebar1 dl>dd li.icon_user02,
+#sidebard2 dl>dd li.icon_user02,
+.panel .panel_bottom .comment>dl.icon_user02{
+	background:url(../images/uicon_02.png) no-repeat left top;
+	background-size: 36px;
+}
+
+#sidebar1 dl>dd li.icon_user03,
+#sidebard2 dl>dd li.icon_user03,
+.panel .panel_bottom .comment>dl.icon_user03{
+	background:url(../images/uicon_03.png) no-repeat left top;
+	background-size: 36px;
+}
+
+#sidebar1 dl>dd li.icon_user04,
+#sidebard2 dl>dd li.icon_user04,
+.panel .panel_bottom .comment>dl.icon_user04{
+	background:url(../images/uicon_04.png) no-repeat left top;
+	background-size: 36px;
+}
 
 /*********************************************************************************/
 /* right                                                                     */
