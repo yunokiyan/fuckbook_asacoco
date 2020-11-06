@@ -608,6 +608,10 @@ input[type="text"] {
 	margin-bottom: 10px;
 }
 
+#sidebard2 .banner h3 img{
+	vertical-align: bottom;
+}
+
 #sidebard2 dl>dd li.active::after{
 	content: "";
 	position: absolute;
