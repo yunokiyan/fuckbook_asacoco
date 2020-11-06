@@ -19,11 +19,6 @@
 	{
 	}
 
-	h2, h3, h4, h5, h6
-	{
-		font-size: 1.5em;
-	}
-
 	section,
 	article
 	{
@@ -45,119 +40,67 @@
 
 	.container
 	{
-		padding: 0em 2em;
-	}
-	
-	.button
-	{
-		display: block;
-		width: 100%;
-		text-align: center;
-	}
-	
-	header
-	{
-		margin-bottom: 2.5em;
+		padding: 0em 0px;
 	}
 
-	header h2
-	{
-		letter-spacing: normal;
-		font-weight: 900;
-		font-size: 1.4em;
-		color: #323338;
-	}
-	
-/*********************************************************************************/
-/* UI                                                                            */
-/*********************************************************************************/
-
-	#titleBar
-	{
-		background: none;
-	}
-
-		#titleBar .title
-		{
-			display: none;
-			color: #fff;
-			text-align: center;
-			line-height: 44px;
-		}
-
-			#titleBar .toggle:before
-			{
-				content: '';
-				display: block;
-				width: 60px;
-				height: 44px;
-				background: rgba(0,0,0,0.5);
-				border-radius: 4px;
-				position: absolute;
-				left: 5px;
-				top: 5px;
-			}
-
-			#titleBar .toggle:after
-			{
-				content: '';
-				display: block;
-				width: 20px;
-				height: 20px;
-				position: absolute;
-				left: 25px;
-				top: 20px;
-				background: url('images/mobileUI-site-nav-opener-bg.svg') 0px 0px no-repeat;
-				opacity: 0.50;
-			}
-
-			#titleBar .toggle:active:after
-			{
-				opacity: 0.5;
-			}
-
-	#navPanel
-	{
-		background: #323338;
-	}
-
-		#navPanel .link
-		{
-			display: block;
-			color: #888;
-			text-decoration: none;
-			height: 44px;
-			line-height: 44px;
-			border-top: solid 1px #3f4046;
-			padding: 0 1em 0 1em;
-		}
-		
-			#navPanel .link:first-child
-			{
-				border-top: 0;
-			}
-			
-			#navPanel .link.depth-0
-			{
-				color: #fff;
-			}
-
-			#navPanel .indent-1 { display: inline-block; width: 1em; }
-			#navPanel .indent-2 { display: inline-block; width: 2em; }
-			#navPanel .indent-3 { display: inline-block; width: 3em; }
-			#navPanel .indent-4 { display: inline-block; width: 4em; }
-			#navPanel .indent-5 { display: inline-block; width: 5em; }
-			#navPanel .depth-0 { color: #fff; }
 			
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
 
-	#header
-	{
-		padding: 8em 0em 4em 0em;
-		text-align: center;
+header h2{
+	display: none;
+}
+
+#header
+{
+	padding: 10px;
+	text-align: center;
+	background:#3B5998;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+#content header{
+	margin-bottom: 10px !important;
+}
+	
+#content header ul li:last-child{
+	margin-right: 0px;
+}
+
+#content header ul li img{
+	vertical-align: bottom;
+}
+
+/*********************************************************************************/
+/* Nav                                                                          */
+/*********************************************************************************/
+
+	#nav{
+		margin-top: 0;
 	}
+	#nav > p{
+		background: url(../images/icon_user.png) no-repeat left 0px top 0px;
+		background-size: 30px 30px;
+		padding-left: 40px;
+	}
+	#nav > p a{
+		color: #fff;
+	}
+
+	#nav > ul {
+		width: 100%;
+		text-align: right;
+	}
+	#nav > ul > li{
+		margin-right: 10px;
+	}
+
+	#nav > ul > li:nth-child(4){
+		display: none !important;
+	}
+
 
 /*********************************************************************************/
 /* Logo                                                                          */
@@ -165,99 +108,126 @@
 
 	#logo
 	{
-		margin-bottom: 3em;
+		display: none;
 	}
-	
-		#logo h1
-		{
-			color: #FFF;
-		}
-	
-		#logo h1 a
-		{
-			display: block;
-			letter-spacing: 1px;
-			text-decoration: none;
 
-			font-size: 2em;
-			font-weight: 900;
-			color: #323338;
-		}
-
-		#logo span
-		{
-			display: block;
-			padding-top: 1em;
-			letter-spacing: 1px;
-
-			font-size: 1em;
-			color: #8e8588;
-		}			
 	
 	#nav
 	{
-		display: none;
 	}
 	
 /*********************************************************************************/
 /* Main                                                                          */
 /*********************************************************************************/
 
-	#main
-	{
-		padding: 4em 0em 1em 0em;
+	#page{
+		padding: 10px 0 0;	
 	}
-
 	#content
 	{
 	}
 	
-	#content header
-	{
-		margin-bottom: 2em;
-	}
-	
-	#content header h2
-	{
-		line-height: 1em;
-		font-size: 1.8em;
-	}
-	
-	#content header .byline
-	{
-		line-height: 1.5em;
-		font-size: 1.20em;
-	}
-	
-	#sidebar h2
-	{
-		display: block;
-		padding-bottom: 1em;
-		font-size: 1.4em;
-	}
-	
 
 /*********************************************************************************/
-/* Featured                                                                      */
+/* Panel                                                                        */
 /*********************************************************************************/
-	
-	#featured
-	{
-		padding: 4em 0em 4em 0em;
-	}
-	
+
+.panel{
+	padding: 10px;
+	border-radius: 0;
+}
+
+.panel dl.panel_top dd.form,
+.panel div.panel_bottom>dl dd.form{
+	width: 100%;
+}
+
+.panel dl.panel_top dd.form>input,
+.panel div.panel_bottom>dl dd.form>input{
+	width: 100%;
+}
+
+.panel .panel_bottom ul.menu{
+	width: 100%;
+	padding: 10px 60px 0;
+	justify-content: space-between;
+}
+.panel .panel_bottom ul.menu li{
+	padding: 0;
+	width: 60px;
+}
+.panel .panel_bottom ul.menu li a{
+	visibility: hidden;
+}
+
+.panel .panel_bottom ul.menu2{
+	width: 100%;
+	padding:10px 10px;
+	justify-content: left;
+}
+
+.panel .panel_bottom ul.menu2 li{
+	width: auto;
+	margin-right: 20px;
+}
+
+
 /*********************************************************************************/
-/* Footer                                                                        */
+/* left                                                                        */
 /*********************************************************************************/
-	
-	#footer
-	{
-		padding: 4em 0em 2em 0em;
-	}
-	
-	#footer h2
-	{
-		padding-bottom: 2em;
-		font-size: 1.4em;
-	}
-	
+
+#sidebar1{
+	display: none;
+}
+
+
+
+/*********************************************************************************/
+/* right                                                                        */
+/*********************************************************************************/
+
+#sidebard2{
+	padding-bottom:0;
+	margin-bottom: 0 !important;
+}
+
+#sidebard2 header{
+	display: block;
+	margin-bottom: 0px;
+	padding: 15px;
+}
+
+#sidebard2 .banner,
+#sidebard2>dl{
+	padding: 15px;
+	background: #fff;
+}
+#sidebard2>dl{
+	margin-top:10px;
+}
+#sidebard2>dl ul{
+	display: flex;
+	justify-content: left;
+	margin-bottom: 0 !important;
+}
+#sidebard2>dl ul li{
+	margin: 0 15px 0 0;
+	position: relative;
+	padding: 0;
+	width: 40px;
+}
+#sidebard2>dl ul li>a{
+	visibility: hidden;
+}
+
+
+/*********************************************************************************/
+/* copyright                                                                        */
+/*********************************************************************************/
+#copyright .container{
+	padding: 20px 0;
+	margin: 0;
+}
+
+#copyright .container a{
+}
