@@ -1,0 +1,43 @@
+
+.panel dl.panel_top dd.form,
+.panel div.panel_bottom>dl dd.form{
+	width: 100%;
+}
+
+.panel dl.panel_top dd.form>input,
+.panel div.panel_bottom>dl dd.form>input{
+	width: 100%;
+}
+
+/* bottom */
+.panel .panel_bottom ul.menu{
+	width: 100%;
+	padding: 10px 60px 0;
+	justify-content: space-between;
+}
+.panel .panel_bottom ul.menu li a{
+	padding: 0;
+	width: 35px;
+}
+.panel .panel_bottom ul.menu li a span{
+	display: none;
+}
+
+.panel .panel_bottom ul.menu2{
+	width: 100%;
+	padding:10px 10px;
+	justify-content: left;
+}
+
+.panel .panel_bottom ul.menu2 li{
+	width: auto;
+	margin-right: 20px;
+}
+
+.panel .panel_bottom .comment>dl dt{
+	padding: 10px;
+	margin-bottom: 0;
+}
+.panel .panel_bottom .comment>dl dd{
+	margin-left: 45px;
+}

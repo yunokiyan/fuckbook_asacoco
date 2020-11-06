@@ -152,10 +152,10 @@ input[type="text"]{
 }
 .panel .panel_bottom ul.menu li a{
 	padding: 0;
-	width: 60px;
+	width: 35px;
 }
 .panel .panel_bottom ul.menu li a span{
-	visibility: hidden;
+	display: none;
 }
 
 .panel .panel_bottom ul.menu2{
@@ -169,6 +169,10 @@ input[type="text"]{
 	margin-right: 20px;
 }
 
+.panel .panel_bottom ul.menu2 li a{
+	padding-top: 7px;
+}
+
 .panel .panel_bottom .comment>dl dt{
 	padding: 10px;
 	margin-bottom: 0;
@@ -176,6 +180,7 @@ input[type="text"]{
 .panel .panel_bottom .comment>dl dd{
 	margin-left: 45px;
 }
+
 
 /*********************************************************************************/
 /* left                                                                        */

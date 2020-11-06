@@ -27,9 +27,16 @@
 	}
 
 	p {
-		margin-bottom: 1.5em;
-		line-height: 200%;
+		margin-bottom: 1.2em;
+		line-height: 1.6rem;
+    white-space: normal;
 	} 
+
+	pre{
+		margin-bottom: 1.2em;
+		line-height: 1.6rem;
+    white-space: normal;
+	}
 
 	a {
 		color: #333;
@@ -53,6 +60,34 @@
 		color: #323338;
 	}
 
+	.btn_design,
+	#nav > ul > li,
+	#content header ul li,
+	.panel .panel_bottom ul.menu li,
+	.panel .panel_bottom ul.menu2 li,
+	#sidebard2 .banner h3 {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: 0.2s;
+	}
+  
+	/* マウスオーバー時 */
+	.btn_design:hover,
+	#nav > ul > li:hover,
+	#content header ul li:hover,
+	.panel .panel_bottom ul.menu li:hover,
+	.panel .panel_bottom ul.menu2 li:hover,
+	#sidebard2 .banner h3:hover{
+			box-shadow: 0 2px 7px 0px rgba(0, 0, 0, 0.3);
+			transform: translateY(-3px);
+			cursor: pointer;
+		}
 
 /*********************************************************************************/
 /* Header                                                                        */
@@ -366,14 +401,18 @@ input[type="text"] {
 	border-bottom: 1px solid #ccc;
 }
 
+.panel .panel_bottom ul.menu li,
+.panel .panel_bottom ul.menu2 li{
+	padding: 5px 10px 0;
+}
+
 .panel .panel_bottom ul.menu li a,
 .panel .panel_bottom ul.menu2 li a{
-	width: 140px;
 	height: 40px;
 	padding-left: 50px;
 	display: block;
 	box-sizing: border-box;
-	padding-top:10px;
+	padding-top:14px;
 }
 
 .panel .panel_bottom footer{
@@ -406,16 +445,16 @@ input[type="text"] {
 }
 
 .panel .panel_bottom ul.menu li:nth-child(1) a{
-	background: url(../images/icon_youtube.png) no-repeat left top;
+	background: url(../images/icon_youtube.png) no-repeat left top 2px;
 	background-size: auto 35px;
 }
 .panel .panel_bottom ul.menu li:nth-child(2) a{
-	background: url(../images/icon_photo.png) no-repeat left top;
+	background: url(../images/icon_photo.png) no-repeat left top 2px;
 	background-size: auto 35px;
 }
 .panel .panel_bottom ul.menu li:nth-child(3) a{
-	background: url(../images/icon_voice.png) no-repeat left top;
-	background-size: auto 35px;
+	background: url(../images/icon_voice.png) no-repeat left top 4px;
+	background-size: auto 30px;
 }
 
 .panel .panel_bottom ul.menu2 li.fuck a{
