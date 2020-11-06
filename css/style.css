@@ -14,7 +14,7 @@
 		margin: 0px;
 		padding: 0px;
 		background: #f3f2ed;
-		font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', "hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif
+		font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 		font-size: 10pt;
 		color: #333333;
 		background-color: #eff2f5;
@@ -91,9 +91,14 @@
 		margin-right: 10px;
 		box-shadow: #ccc 3px 3px 3px;
 	}
+		
+	#content header ul li:last-child{
+		margin-right: 0px;
+	}
 
 	#content header ul li img{
 		width: 100%;
+		vertical-align: bottom;
 	}
 
 
@@ -319,7 +324,7 @@ input[type="text"] {
 /* panel cont */
 
 .panel .panel_cont p.photo{
-	margin-bottom: 0px;
+	margin:0 -20px 0px;
 }
 
 .panel .panel_cont .chatroom{
@@ -361,8 +366,8 @@ input[type="text"] {
 	border-bottom: 1px solid #ccc;
 }
 
-.panel .panel_bottom ul.menu li,
-.panel .panel_bottom ul.menu2 li{
+.panel .panel_bottom ul.menu li a,
+.panel .panel_bottom ul.menu2 li a{
 	width: 140px;
 	height: 40px;
 	padding-left: 50px;
@@ -372,7 +377,7 @@ input[type="text"] {
 }
 
 .panel .panel_bottom footer{
-	padding: 10px 0 20px;
+	padding: 10px 0 10px;
 	font-size: 0.8rem;
 }
 
@@ -388,7 +393,6 @@ input[type="text"] {
 	padding-left: 30px;
 	min-height: 20px;
 	margin-right: 20px;
-	padding-top: 5px;
 	width: 500px;
 }
 
@@ -397,29 +401,28 @@ input[type="text"] {
 }
 
 .panel .panel_bottom footer>dl dd{
-	padding-top: 5px;
 	text-align: right;
 	width: 140px;
 }
 
-.panel .panel_bottom ul.menu li:nth-child(1){
+.panel .panel_bottom ul.menu li:nth-child(1) a{
 	background: url(../images/icon_youtube.png) no-repeat left top;
 	background-size: auto 35px;
 }
-.panel .panel_bottom ul.menu li:nth-child(2){
+.panel .panel_bottom ul.menu li:nth-child(2) a{
 	background: url(../images/icon_photo.png) no-repeat left top;
 	background-size: auto 35px;
 }
-.panel .panel_bottom ul.menu li:nth-child(3){
+.panel .panel_bottom ul.menu li:nth-child(3) a{
 	background: url(../images/icon_voice.png) no-repeat left top;
 	background-size: auto 35px;
 }
 
-.panel .panel_bottom ul.menu2 li.fuck{
+.panel .panel_bottom ul.menu2 li.fuck a{
 	background: url(../images/logo.png) no-repeat left top;
 	background-size: auto 35px;
 }
-.panel .panel_bottom ul.menu2 li.comment{
+.panel .panel_bottom ul.menu2 li.comment a{
 	background: url(../images/icon_comment.png) no-repeat left top;
 	background-size: auto 35px;
 }
