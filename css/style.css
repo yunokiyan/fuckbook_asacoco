@@ -5,7 +5,6 @@
 */
 
 @charset 'UTF-8';
-@font-face{font-family:'FontAwesome';src:url('font/fontawesome-webfont.eot?v=4.0.1');src:url('font/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('font/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
 
 /*********************************************************************************/
 /* Basic                                                                         */
@@ -15,10 +14,10 @@
 		margin: 0px;
 		padding: 0px;
 		background: #f3f2ed;
-		font-family: 'Lato', sans-serif;
-		font-size: 12pt;
-		font-weight: 300;
-		color: #8A8A8A;
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', "hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif
+		font-size: 10pt;
+		color: #333333;
+		background-color: #eff2f5;
 	}
 
 	h1, h2, h3 {
@@ -29,11 +28,12 @@
 
 	p {
 		margin-bottom: 1.5em;
-		line-height: 180%;
-	}
+		line-height: 200%;
+	} 
 
 	a {
-		color: #D1551F;
+		color: #333;
+		text-decoration: none;
 	}
 
 	strong {
@@ -89,13 +89,11 @@
 
 	header
 	{
-		margin-bottom: 2.5em;
+		margin-bottom: 23px;
 	}
 
 	header h2
 	{
-		letter-spacing: -2px;
-		text-transform: uppercase;
 		font-weight: 900;
 		font-size: 2em;
 		color: #323338;
@@ -128,7 +126,6 @@
 		.fa:before
 		{
 			display:inline-block;
-			font-family: FontAwesome;
 			font-size: 1.25em;
 			text-decoration: none;
 			font-style: normal;
@@ -598,9 +595,7 @@ ul.style3 .date {
 	background: #323338;
 	border-radius: 4px;
 	line-height: normal;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: 'Abel', sans-serif;
+	text-align: center
 	font-size: 14px;
 	color: #FFFFFF;
 }
@@ -634,7 +629,7 @@ ul.style3 .first {
 			background: #323338;
 			border-radius: 4px;
 			text-decoration: none;
-			text-transform: uppercase;
+
 			font-size: 1.1em;
 			color: #FFF;
 			-moz-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
@@ -660,11 +655,9 @@ ul.style3 .first {
 	background: #CEC3A0;
 	border-radius: 5px;
 	line-height: normal;
-	text-align: center;
-	text-transform: uppercase;
+	text-align: center
 	text-decoration: none;
 	text-shadow: 1px 1px 1px #8A8B71;
-	font-family: 'Abel', sans-serif;
 	font-size: 14px;
 	color: #FFFFFF;
 }
@@ -676,26 +669,38 @@ ul.style3 .first {
 	#header
 	{
 		position: relative;
-		text-align: center;
-		background: url(../images/banner.jpg) no-repeat center;
+		text-align: left;
 		background-size: cover;
+		background-color: #ffffff;
 	}
 
 
 	#page {
-		padding: 5em 0em;
-		background: #FFF
+		padding: 25px 0 0;
 	}
 	
 	#content header
 	{
-		margin-bottom: 2em !important;
+		margin-bottom: 25px !important;
 	}
 
 	#content header h2
 	{
-		line-height: 1.2em;
-		font-size: 3em;
+		font-size: 1.1em;
+		margin-bottom: 20px;
+		color: #999;
+	}
+
+	#content header ul{
+		display: flex;
+	}
+
+	#content header ul li{
+		width: 230px;
+		height: 120px;
+		margin-right: 10px;
+		background-color: #ccc;
+		box-shadow: #ccc 3px 3px 3px;
 	}
 
 	#content
@@ -723,6 +728,7 @@ ul.style3 .first {
 		padding: 3em 0em;
 		border-top: 1px solid;
 		border-color: rgba(0,0,0,.1);
+		margin-top: 40px;
 	}
 	
 	#copyright a
@@ -736,3 +742,329 @@ ul.style3 .first {
 		padding: 5em 0em;
 		background: #FFF
 	}	
+
+
+
+/*********************************************************************************/
+/* panel                                                                     */
+/*********************************************************************************/
+
+.panel{
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: #ccc 0 2px 0px;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+.panel div.panel_top h3{
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: #999;
+	margin-bottom: 20px;
+}
+
+.panel div.panel_top h3 span{
+	font-size: 0.9rem;
+	display: inline-block;
+	padding-left: 20px;
+}
+
+/* panel top */
+.panel dl.panel_top,
+.panel div.panel_bottom>dl{
+	display: flex;
+	justify-content: left;
+	margin-bottom: 20px;
+}
+
+.panel dl.panel_top>dt,
+.panel div.panel_bottom>dl>dt{
+	width: 40px;
+	margin-right: 10px;
+}
+
+.panel dl.panel_top>dd h3,
+.panel div.panel_bottom>dl>dd h3{
+	font-weight: 600;
+	display: block;
+}
+.panel dl.panel_top>dd p,
+.panel div.panel_bottom>dl>dd p{
+	font-size: 0.9rem;
+	color: #666;
+	margin-bottom: 0;
+}
+
+.panel dl.panel_top dd.form>input,
+.panel div.panel_bottom>dl dd.form>input{
+	width: 610px;
+}
+
+input[type="text"] {
+	border-radius: 20px;
+	background: #EFF2F5;
+	padding:15px 20px;
+	border: none;
+}
+
+/* panel cont */
+
+.panel .panel_cont p.photo{
+	margin-bottom: 0px;
+}
+
+.panel .panel_cont .chatroom{
+	display: flex;
+	justify-content: left;
+}
+.panel .panel_cont .chatroom li{
+	margin-right: 15px;
+	position: relative;
+}
+
+.panel .panel_cont .chatroom li::after{
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	bottom: 0;
+	left: 25px;
+	background-color:#30A24C;
+	border-radius: 50%;
+	border: 2px solid #fff;
+}
+
+
+/* panel bottom */
+
+.panel .panel_bottom ul.menu,
+.panel .panel_bottom ul.menu2 {
+	display: flex;
+	width: 660px;
+	padding: 10px 30px 0;
+	justify-content: space-between;
+	margin: 0 auto;
+	border-top: 1px solid #ccc;
+}
+
+.panel .panel_bottom ul.menu2{
+	padding: 10px 100px 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.panel .panel_bottom ul.menu li,
+.panel .panel_bottom ul.menu2 li{
+	width: 140px;
+	height: 40px;
+	padding-left: 50px;
+	display: block;
+	box-sizing: border-box;
+	padding-top:10px;
+}
+
+.panel .panel_bottom footer{
+	padding: 10px 0 20px;
+	font-size: 0.8rem;
+}
+
+.panel .panel_bottom footer>dl{
+	display: flex;
+	justify-content: left;
+}
+
+.panel .panel_bottom footer>dl dt{
+	background: url(../images/icon_fuck_blue.png) no-repeat left top;
+	background-size: 20px 20px;
+	padding-left: 30px;
+	min-height: 20px;
+	margin-right: 20px;
+	padding-top: 5px;
+	width: 500px;
+}
+
+.panel div.panel_bottom dl{
+	margin: 20px 0 0 ;
+}
+
+.panel .panel_bottom footer>dl dd{
+	padding-top: 5px;
+	text-align: right;
+	width: 140px;
+}
+
+.panel .panel_bottom ul.menu li:nth-child(1){
+	background: url(../images/icon_youtube.png) no-repeat left top;
+	background-size: auto 35px;
+}
+.panel .panel_bottom ul.menu li:nth-child(2){
+	background: url(../images/icon_photo.png) no-repeat left top;
+	background-size: auto 35px;
+}
+.panel .panel_bottom ul.menu li:nth-child(3){
+	background: url(../images/icon_voice.png) no-repeat left top;
+	background-size: auto 35px;
+}
+
+.panel .panel_bottom ul.menu2 li.fuck{
+	background: url(../images/logo.png) no-repeat left top;
+	background-size: auto 35px;
+}
+.panel .panel_bottom ul.menu2 li.comment{
+	background: url(../images/icon_comment.png) no-repeat left top;
+	background-size: auto 35px;
+}
+
+.panel .panel_bottom .comment>dl{
+	margin-bottom: 20px;
+	font-size: 0.9rem;
+}
+.panel .panel_bottom .comment>dl dt{
+	background: #EFF2F5;
+	padding: 20px;
+	border-radius: 10px;
+	margin-left: 46px;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.panel .panel_bottom .comment>dl dt strong{
+	display: block;
+	margin-bottom: 5px;
+}
+.panel .panel_bottom .comment>dl dd{
+	font-size: 0.8rem;
+	margin-left: 66px;
+}
+
+
+/*********************************************************************************/
+/* left                                                                     */
+/*********************************************************************************/
+
+#sidebar1{
+
+}
+
+#sidebar1 h2{
+	font-size: 1.2rem;
+	background: url(../images/icon_user.png) no-repeat left 0px top 0px;
+	background-size:40px 40px;
+	padding:10px 0 0 50px;
+	height: 40px;
+	margin-bottom: 30px;
+}
+
+#sidebar1 dl>dt,
+#sidebard2 dl>dt{
+	font-size: 1.1rem;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+#sidebar1 dl>dt a,
+#sidebard2 dl>dt a{
+	color: #999;
+	font-size: 1.1rem;
+}
+
+#sidebar1 dl>dd ul,
+#sidebard2 dl>dd ul{
+	margin-bottom: 40px;
+}
+
+#sidebar1 dl>dd li,
+#sidebard2 dl>dd li{
+	margin-bottom: 10px;
+	padding-left: 46px;
+	height: 40px;
+	padding-top: 13px;
+	font-size: 0.9rem;
+	position: relative;
+}
+
+#sidebar1 dl>dd li.icon_kanata,
+#sidebard2 dl>dd li.icon_kanata,
+.panel .panel_bottom .comment>dl.icon_kanata{
+	background:url(../images/uicon_kanagori.png) no-repeat left top;
+	background-size: 36px;
+}
+#sidebar1 dl>dd li.icon_coco,
+#sidebard2 dl>dd li.icon_coco,
+.panel .panel_bottom .comment>dl.icon_coco{
+	background:url(../images/uicon_coco.png) no-repeat left top;
+	background-size: 36px;
+}
+#sidebar1 dl>dd li.icon_chama,
+#sidebard2 dl>dd li.icon_chama,
+.panel .panel_bottom .comment>dl.icon_chama{
+	background:url(../images/uicon_chama.png) no-repeat left top;
+	background-size: 36px;
+}
+#sidebar1 dl>dd li.icon_tmt,
+#sidebard2 dl>dd li.icon_tmt,
+.panel .panel_bottom .comment>dl.icon_tmt{
+	background:url(../images/uicon_tmt.png) no-repeat left top;
+	background-size: 36px;
+}
+#sidebar1 dl>dd li.icon_bk1,
+#sidebard2 dl>dd li.icon_bk1,
+.panel .panel_bottom .comment>dl.icon_bk1{
+	background:url(../images/uicon_bakatare1.png) no-repeat left top;
+	background-size: 36px;
+}
+#sidebar1 dl>dd li.icon_bk2,
+#sidebard2 dl>dd li.icon_bk2,
+.panel .panel_bottom .comment>dl.icon_bk2{
+	background:url(../images/uicon_bakatare2.png) no-repeat left top;
+	background-size: 36px;
+}
+#sidebar1 dl>dd li.icon_yagoo,
+#sidebard2 dl>dd li.icon_yagoo,
+.panel .panel_bottom .comment>dl.icon_yagoo{
+	background:url(../images/uicon_yagoo.png) no-repeat left top;
+	background-size: 36px;
+}
+
+#sidebar1 dl>dd li.icon_watame,
+#sidebard2 dl>dd li.icon_watame,
+.panel .panel_bottom .comment>dl.icon_watame{
+	background:url(../images/icon_user.png) no-repeat left top;
+	background-size: 36px;
+}
+
+
+
+/*********************************************************************************/
+/* right                                                                     */
+/*********************************************************************************/
+
+
+#sidebard2 h2{
+	font-size: 1.1rem;	
+	color: #999;
+}
+
+#sidebard2 dl{
+	border-top:1px solid #ccc;
+	margin-top:30px;
+	padding-top: 30px;
+}
+
+#sidebard2 .banner{
+	font-size: 0.9rem;
+}
+#sidebard2 .banner h3{
+	margin-bottom: 10px;
+}
+
+#sidebard2 dl>dd li.active::after{
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	bottom: 0;
+	left: 25px;
+	background-color:#30A24C;
+	border-radius: 50%;
+	border: 2px solid #fff;
+}

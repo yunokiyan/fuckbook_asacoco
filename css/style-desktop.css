@@ -10,17 +10,23 @@
 
 	#header
 	{
-		padding: 5em 0em;
+		padding: 0em 0em;
+		box-shadow:#ccc 0px 3px 3px;
 	}
 	
 		.homepage #header
 		{
-			padding: 10em 0em;
+			padding: 0em 0em;
 		}
 
 		#header .container
 		{
+			display: flex;
+			box-sizing: border-box;
+			justify-content: space-between;
+			padding: 10px 0;
 		}
+
 
 /*********************************************************************************/
 /* Logo                                                                          */
@@ -28,7 +34,7 @@
 
 	#logo
 	{
-		margin-bottom: 3em;
+		margin-bottom: 0em;
 	}
 	
 		#logo h1
@@ -41,10 +47,14 @@
 			display: block;
 			letter-spacing: 1px;
 			text-decoration: none;
-			text-transform: uppercase;
-			font-size: 4em;
+			font-size: 2em;
 			font-weight: 900;
-			color: #323338;
+			color: #1A77F2;
+			background: url(../images/logo.png) no-repeat left top;
+			background-size: auto 50px;
+			padding:10px 0 0 65px;
+			height: 50px;
+			box-sizing: border-box;
 		}
 
 		#logo span
@@ -52,7 +62,6 @@
 			display: block;
 			padding-top: 1em;
 			letter-spacing: 1px;
-			text-transform: uppercase;
 			font-size: 1.2em;
 			color: #8e8588;
 		}			
@@ -64,11 +73,52 @@
 
 	#nav
 	{
+		margin-top: 5px;
+		display: flex;
+	}
+
+	nav > p{
+		background: url(../images/icon_user.png) no-repeat left 0px top 0px;
+		background-size:40px 40px;
+		padding:5px 0 0 50px;
+		margin-right: 20px;
+		height: 40px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+	}
+
+	nav > p a{
+		display: block;
+		text-decoration: none;
+		font-weight: 900;
+		font-size: 1em;
+		color: #323338;
 	}
 
 		#nav > ul > li
 		{
 			display: inline-block;
+			border-radius: 50%;
+			width: 40px;
+			height: 40px;
+			margin-right: 20px;
+		}
+
+		nav > ul > li:nth-child(1){
+			background: #E3E6EA url(../images/header_icon_01.png) no-repeat left 9px top 9px;
+			background-size:22px 22px;
+		}
+		nav > ul > li:nth-child(2){
+			background: #E3E6EA url(../images/header_icon_02.png) no-repeat left 9px top 9px;
+			background-size:22px 22px;
+		}
+		nav > ul > li:nth-child(3){
+			background: #E3E6EA url(../images/header_icon_03.png) no-repeat left 9px top 9px;
+			background-size:22px 22px;
+		}
+		nav > ul > li:nth-child(4){
+			background: #E3E6EA url(../images/header_icon_04.png) no-repeat left 9px top 9px;
+			background-size:22px 22px;
 		}
 		
 			#nav > ul > li:last-child
@@ -76,18 +126,17 @@
 				padding-right: 0;
 			}
 
-			#nav > ul > li > a,
-			#nav > ul > li > span
+			#nav > ul > li > a
 			{
 				display: block;
 				padding: 1em 1.5em;
 				letter-spacing: 1px;
 				text-decoration: none;
-				text-transform: uppercase;
 				font-weight: 200;
 				font-size: 1em;
 				outline: 0;
 				color: #323338;
+				visibility: hidden;
 			}
 
 
