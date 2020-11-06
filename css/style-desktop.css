@@ -22,6 +22,10 @@
 			padding: 10px 0;
 		}
 
+		.panel .panel_bottom footer>dl dt,
+		.panel .panel_bottom footer>dl dd{
+			padding-top: 5px;
+		}
 
 
 /*********************************************************************************/
